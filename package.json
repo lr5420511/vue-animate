@@ -17,5 +17,13 @@
   "dependencies": {
     "new-promiseify": "^1.1.1",
     "velocity-animate": "^1.5.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lr5420511/vue-animate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lr5420511/vue-animate/issues"
+  },
+  "homepage": "https://github.com/lr5420511/vue-animate#readme"
 }
