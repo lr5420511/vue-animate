@@ -26,7 +26,7 @@
     
     Vue.use(VueAnimate, {
         valueof: ':', // 表示v-animate指令修饰符中键与值使用什么字符分割，默认使用':'
-        begin: 'begin', // 表示v-animate指令修饰符中动画开始之前的挂钩点的名称，可以通过方式`.begin:onBegin`注入钩子函数，它可以是async function
+        begin: 'begin', //表示v-animate指令修饰符中动画开始之前的挂钩点的名称，可以通过方式`.begin:onBegin`注入钩子函数，它可以是async function
         after: 'complete', // 表示v-animate指令修饰符中动画结束之后的挂钩点的名称，`.complete:onComplete`方式注入钩子，它可以是async function
         callback: null // 表示v-animate指令中，动画部分（包括之后的衔接部分）完全执行完毕后的钩子函数注入口
     });
