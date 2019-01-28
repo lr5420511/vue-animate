@@ -76,6 +76,11 @@ function(veloc, cmd, el, binding, vn, oldvn){}
 5. vn: 当前的虚拟节点。
 6. oldvn: 上一个虚拟节点，在元素插入文档时不可用。
 
+
+## 参考页面
+
+可以参考具体页面:[vue animate page](https://github.com/lr5420511/my-vue-components/blob/master/src/components/page/vue-animate.vue)
+
     
     
 
