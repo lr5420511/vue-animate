@@ -50,7 +50,7 @@
     // 表示当上下文状态show初始值或者变化为true时，动画同步视图，效果是首先停顿500毫秒，然后以timeout为200毫秒的动画，同步height和opacity的值。
 
     <div v-if="show" v-animate:style.duration:200.complete:onTestComplete="{ translateX: test.positionX, opacity: test.opacity }"></div>
-    // 提供了声明式的元素入场及退场动画，退场时除了首先修改test.positionX和test.opacity状态的值，还需要在当前上下文methods中提供onTestComplete钩子函数，并且实现把状态show赋值为false同时修改test.positionX和test.opacity为初始值，以备下次的元素出场。
+    // 提供了声明式的元素入场及退场动画，退场时除了首先修改test.positionX和test.opacity状态的值，还需要在当前上下文methods中提供onTestComplete钩子函数，并且实现把状态show赋值为false。
 
     <hr v-animate:style.duration:100.progress:onProgress.complete:onComplete="{ width: width }" />
     // 通过在当前上下文中实现钩子函数onProgress可以为进度条提供百分比功能，并且通过实现onComplete钩子函数做进度条的收尾工作。
@@ -69,7 +69,7 @@ function(veloc, cmd, el, binding, vn, oldvn){}
 
 参数说明：
 
-1. veloc: 表示通过改造为promiseify后的velocity函数，如果要访问原生velocity函数，请调用veloc.naiver。
+1. veloc: 表示已经promise化改造以后的velocity函数，如果要访问原生velocity函数，请调用veloc.naiver。
 2. cmd: 表示animate指令钩子的当前实例。
 3. el: 表示当前涉及到的元素的实例。
 4. binding: 表示指令绑定到元素的信息。比如arg、modifiers、value、oldValue和expression等...
