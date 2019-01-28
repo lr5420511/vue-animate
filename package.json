@@ -1,5 +1,5 @@
 {
-  "name": "vue-animate",
+  "name": "vue-animate-plugin",
   "version": "1.0.0",
   "description": "这是一个vue插件，它提供了v-animate指令，用于使用动画的方式同步视图的简单实现。",
   "main": "index.js",
